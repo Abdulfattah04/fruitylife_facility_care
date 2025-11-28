@@ -1,0 +1,138 @@
+/* Contact Section */
+.contact-section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-wrapper {
+  background: #fff;
+  width: 100%;
+  max-width: 850px;
+  padding: 45px;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+}
+
+/* Header */
+.contact-header h2 {
+  text-align: center;
+  font-size: 34px;
+  color: #194376;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contact-header p {
+  text-align: center;
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+/* Form layout */
+.contact-form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 25px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Labels */
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1.7px solid #e5e5e5;
+  background: #f9f9f9;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s ease;
+  color: #333;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #46c6ce;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(70,198,206,0.15);
+  outline: none;
+}
+
+/* Textarea */
+.contact-form textarea {
+  height: 130px;
+  resize: none;
+}
+
+/* Button */
+.contact-btn {
+  width: 100%;
+  padding: 16px;
+  background: #46c6ce;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #194376;
+  transform: translateY(-2px);
+}
+
+/* Responsive Queries */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+  .contact-wrapper {
+    padding: 35px;
+  }
+  .contact-header h2 {
+    font-size: 30px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .contact-wrapper {
+    padding: 25px;
+  }
+  .contact-header h2 {
+    font-size: 26px;
+  }
+  .contact-btn {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
